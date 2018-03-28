@@ -18,6 +18,8 @@ public class Financeiro implements Runnable{
 			
 			
 			
+			
+			
 			try {
 				
 				Thread.sleep(1);
