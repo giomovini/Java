@@ -1,0 +1,16 @@
+
+//http://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html
+
+
+
+.chart{
+	-fx-background-color: lightgray;
+
+}
+
+.data0.chart-pie{ -fx-pie-color: mediumvioletred;}
+.data1.chart-pie{ -fx-pie-color: aqua;}
+.data2.chart-pie{ -fx-pie-color: olive;}
+.data3.chart-pie{ -fx-pie-color: blue;}
+.data4.chart-pie{ -fx-pie-color: darkorange;}
+.data5.chart-pie{ -fx-pie-color: mediumpurple;}
