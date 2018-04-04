@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ancor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tela.ControleCliente">
+   <children>
+      <Label layoutX="10.0" layoutY="139.0" prefHeight="25.0" prefWidth="100.0" text="Porta:" textFill="#575757" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="319.0" orientation="VERTICAL" prefHeight="425.0" prefWidth="10.0" />
+      <TextField fx:id="txtPortaCliente" layoutX="122.0" layoutY="139.0" prefHeight="25.0" prefWidth="183.0" />
+      <Label alignment="CENTER" layoutX="22.0" layoutY="363.0" prefHeight="25.0" prefWidth="130.0" text="Status do Cliente" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnConectar" layoutX="185.0" layoutY="302.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Conectar">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblStatus" alignment="CENTER" layoutX="152.0" layoutY="363.0" prefHeight="25.0" prefWidth="143.0" text="Não conectado" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtIPServidor" layoutX="122.0" layoutY="234.0" prefHeight="25.0" prefWidth="183.0" />
+      <Label layoutX="10.0" layoutY="234.0" prefHeight="25.0" prefWidth="100.0" text="Endereco IP :" textFill="#575757" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="264.0" prefHeight="25.0" prefWidth="100.0" text="Porta:" textFill="#575757" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPortaServidor" layoutX="122.0" layoutY="264.0" prefHeight="25.0" prefWidth="183.0" />
+      <TextArea fx:id="txtMensagem" layoutX="351.0" layoutY="362.0" prefHeight="46.0" prefWidth="250.0" />
+      <TextArea fx:id="txtMensagemRecebida" layoutX="351.0" layoutY="210.0" prefHeight="146.0" prefWidth="322.0" />
+      <Button fx:id="btnEnviar" layoutX="609.0" layoutY="362.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="64.0" text="Enviar">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtNome" layoutX="122.0" layoutY="49.0" prefHeight="25.0" prefWidth="183.0" />
+      <Label layoutX="10.0" layoutY="49.0" prefHeight="25.0" prefWidth="100.0" text="Nome:" textFill="#575757" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="79.0" prefHeight="25.0" prefWidth="100.0" text="Apelido:" textFill="#575757" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtApelido" layoutX="122.0" layoutY="79.0" prefHeight="25.0" prefWidth="183.0" />
+      <TextField fx:id="txtEnderecoIP" layoutX="122.0" layoutY="109.0" prefHeight="25.0" prefWidth="183.0" />
+      <Label layoutX="10.0" layoutY="109.0" prefHeight="25.0" prefWidth="100.0" text="Endereco IP:" textFill="#575757" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="34.0" layoutY="12.0" prefHeight="20.0" prefWidth="250.0" text="Dados Cliente" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutY="193.0" prefHeight="4.0" prefWidth="322.0" />
+      <Label alignment="CENTER" layoutX="34.0" layoutY="202.0" prefHeight="25.0" prefWidth="250.0" text="Dados Servidor" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblClientes" layoutX="351.0" layoutY="34.0" prefHeight="137.0" prefWidth="322.0">
+        <columns>
+          <TableColumn fx:id="colNome" prefWidth="153.0" text="Nome" />
+          <TableColumn fx:id="colApelido" prefWidth="167.0" text="Apelido" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnDesconectar" layoutX="14.0" layoutY="302.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Desconectar" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="50.0" layoutY="429.0" prefWidth="600.0" text="Desenvolvido por Henry Lucas Saldanha" textFill="#797979">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutY="425.0" prefWidth="700.0" />
+      <Label alignment="CENTER" layoutX="387.0" layoutY="12.0" prefHeight="20.0" prefWidth="250.0" text="Selecione um cliente" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="323.0" layoutY="193.0" prefHeight="4.0" prefWidth="376.0" />
+   </children>
+</AnchorPane>
