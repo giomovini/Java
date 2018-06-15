@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="anchor" stylesheets="@../../estiloCSS/styleImagemFundo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visao.inserirProduto.ControleInserirProduto">
+   <bottom>
+      <Pane prefHeight="20.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblStatusSistema" layoutX="1.0" layoutY="1.0" prefHeight="18.0" prefWidth="448.0" text="Conectado" />
+            <Separator layoutX="450.0" maxWidth="1.0" orientation="VERTICAL" prefHeight="20.0" />
+            <Label layoutX="455.0" layoutY="1.0" prefHeight="18.0" prefWidth="444.0" text="Desenvolvido por Henry Lucas Saldanha ©" />
+         </children>
+      </Pane>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblTitulo" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="5.0" prefHeight="30.0" prefWidth="880.0" text="Inserir Produto" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.24944320712694878" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+            <ScrollPane prefHeight="225.0" prefWidth="540.0" styleClass="anchor">
+              <content>
+                <AnchorPane fx:id="AncorMenu" layoutX="1.0" minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="220.0">
+                     <children>
+                        <Accordion fx:id="AccMenu" layoutX="1.0" prefWidth="220.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <ScrollPane prefHeight="540.0" prefWidth="675.0">
+              <content>
+                <AnchorPane fx:id="AncorPrincipal" layoutX="3.0" minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="664.0">
+                     <children>
+                        <Label layoutX="81.0" layoutY="100.0" prefHeight="25.0" prefWidth="75.0" text="Nome">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtNome" layoutX="163.0" layoutY="100.0" prefHeight="25.0" prefWidth="170.0" />
+                        <Label layoutX="81.0" layoutY="140.0" prefHeight="25.0" prefWidth="75.0" text="Descrição">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtPreco" layoutX="163.0" layoutY="218.0" prefHeight="25.0" prefWidth="170.0" />
+                        <Label layoutX="81.0" layoutY="218.0" prefHeight="25.0" prefWidth="75.0" text="Preço">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtquantidade" layoutX="163.0" layoutY="258.0" prefHeight="25.0" prefWidth="170.0" />
+                        <Label layoutX="81.0" layoutY="258.0" prefHeight="25.0" prefWidth="75.0" text="Quantidade">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="81.0" layoutY="298.0" prefHeight="25.0" prefWidth="75.0" text="Validade">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnInserir" layoutX="237.0" layoutY="387.0" mnemonicParsing="false" prefWidth="100.0" text="Inserir" />
+                        <DatePicker fx:id="dateValidade" layoutX="163.0" layoutY="298.0" prefHeight="25.0" prefWidth="170.0" />
+                        <TextArea fx:id="txtDescricao" layoutX="163.0" layoutY="143.0" prefHeight="54.0" prefWidth="170.0" />
+                        <Label layoutX="81.0" layoutY="338.0" prefHeight="28.0" prefWidth="75.0" text="Tipo">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <MenuButton fx:id="menuTipo" layoutX="163.0" layoutY="340.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" text="Selecione" />
+                     </children></AnchorPane>
+              </content>
+            </ScrollPane>
+        </items>
+      </SplitPane>
+   </center>
+   <right>
+      <Pane style="-fx-background-color: #eeeeee;" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

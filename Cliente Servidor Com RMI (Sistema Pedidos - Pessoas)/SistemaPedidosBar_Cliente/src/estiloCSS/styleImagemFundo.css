@@ -1,0 +1,17 @@
+.anchor {
+    
+-fx-background-image:url('../imagens/back-fundo-cliente.jpeg');
+	
+-fx-background-size: 900px;
+    
+-fx-background-repeat: no-repeat;
+    
+-fx-background-position: 50%;
+ 	
+-fx-background-width:900px;
+
+-fx-background-height:600px;
+	
+
+}
+

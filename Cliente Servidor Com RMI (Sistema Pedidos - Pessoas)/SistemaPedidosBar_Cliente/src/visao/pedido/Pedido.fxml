@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="anchor" stylesheets="@../../estiloCSS/styleImagemFundo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visao.pedido.ControlePedido">
+   <bottom>
+      <Pane prefHeight="20.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblStatusSistema" layoutX="1.0" layoutY="1.0" prefHeight="18.0" prefWidth="448.0" text="Conectado" />
+            <Separator layoutX="450.0" maxWidth="1.0" orientation="VERTICAL" prefHeight="20.0" />
+            <Label layoutX="455.0" layoutY="1.0" prefHeight="18.0" prefWidth="444.0" text="Desenvolvido por Henry Lucas Saldanha ©" />
+         </children>
+      </Pane>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblTitulo" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="5.0" prefHeight="30.0" prefWidth="880.0" text="Pedido" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.24944320712694878" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+            <ScrollPane prefHeight="225.0" prefWidth="540.0" styleClass="anchor">
+              <content>
+                <AnchorPane fx:id="AncorMenu" layoutX="1.0" minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="220.0">
+                     <children>
+                        <Accordion fx:id="AccMenu" layoutX="1.0" prefWidth="220.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <ScrollPane prefHeight="540.0" prefWidth="675.0">
+              <content>
+                <AnchorPane fx:id="AncorPrincipal" layoutX="3.0" minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="664.0">
+                     <children>
+                        <TableView fx:id="tblProd" layoutX="32.0" layoutY="72.0" prefHeight="369.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn fx:id="colNome" prefWidth="169.0" text="Nome" />
+                              <TableColumn fx:id="colDesc" prefWidth="261.0" text="Descricao" />
+                              <TableColumn fx:id="colPreco" prefWidth="87.0" text="Preço (R$)" />
+                              <TableColumn fx:id="colQtde" prefWidth="81.0" text="Qtde. Disp" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btnPedido" layoutX="519.0" layoutY="488.0" mnemonicParsing="false" text="Realizar Pedido">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="32.0" layoutY="454.0" text="Produto">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtQuantidade" layoutX="109.0" layoutY="490.0" />
+                        <Label layoutX="32.0" layoutY="494.0" text="Quantidade">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblProduto" layoutX="109.0" layoutY="454.0" prefHeight="19.0" prefWidth="148.0" textFill="#656565">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnLanche" layoutX="532.0" layoutY="29.0" mnemonicParsing="false" prefWidth="100.0" text="Lanche">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnDoce" layoutX="365.0" layoutY="29.0" mnemonicParsing="false" prefWidth="100.0" text="Doce">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnPorcao" layoutX="198.0" layoutY="29.0" mnemonicParsing="false" prefWidth="100.0" text="Porção">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnBebida" layoutX="32.0" layoutY="29.0" mnemonicParsing="false" prefWidth="100.0" text="Bebida">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+              </content>
+            </ScrollPane>
+        </items>
+      </SplitPane>
+   </center>
+   <right>
+      <Pane style="-fx-background-color: #eeeeee;" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

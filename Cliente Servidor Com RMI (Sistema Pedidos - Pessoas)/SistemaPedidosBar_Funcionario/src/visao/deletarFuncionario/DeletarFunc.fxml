@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="anchor" stylesheets="@../../estiloCSS/styleImagemFundo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visao.deletarFuncionario.ControleDeletarFunc">
+   <bottom>
+      <Pane prefHeight="20.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblStatusSistema" layoutX="1.0" layoutY="1.0" prefHeight="18.0" prefWidth="448.0" text="Conectado" />
+            <Separator layoutX="450.0" maxWidth="1.0" orientation="VERTICAL" prefHeight="20.0" />
+            <Label layoutX="455.0" layoutY="1.0" prefHeight="18.0" prefWidth="444.0" text="Desenvolvido por Henry Lucas Saldanha ©" />
+         </children>
+      </Pane>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblTitulo" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="5.0" prefHeight="30.0" prefWidth="880.0" text="Deletar Funcionário" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.24944320712694878" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+            <ScrollPane prefHeight="225.0" prefWidth="540.0" styleClass="anchor">
+              <content>
+                <AnchorPane fx:id="AncorMenu" layoutX="1.0" minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="220.0">
+                     <children>
+                        <Accordion fx:id="AccMenu" layoutX="1.0" prefWidth="220.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <ScrollPane prefHeight="540.0" prefWidth="675.0">
+              <content>
+                <AnchorPane fx:id="AncorPrincipal" layoutX="3.0" minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="664.0">
+                     <children>
+                        <TableView fx:id="tblFunc" layoutX="32.0" layoutY="32.0" prefHeight="474.0" prefWidth="600.0">
+                          <columns>
+                            <TableColumn fx:id="colNome" prefWidth="100.0" text="Nome" />
+                            <TableColumn fx:id="colRG" prefWidth="100.0" text="RG" />
+                              <TableColumn fx:id="colCPF" prefWidth="100.0" text="CPF" />
+                              <TableColumn fx:id="colSetor" prefWidth="100.0" text="Setor" />
+                              <TableColumn fx:id="colSenha" prefWidth="100.0" text="Senha" />
+                              <TableColumn fx:id="colDeletar" prefWidth="98.0" text="Deletar" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </ScrollPane>
+        </items>
+      </SplitPane>
+   </center>
+   <right>
+      <Pane style="-fx-background-color: #eeeeee;" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
