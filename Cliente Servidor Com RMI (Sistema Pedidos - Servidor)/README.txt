@@ -1,0 +1,6 @@
+-O banco de dados (script e dados) se encontra no pacote "banco" do projeto "SistemaPedidosBar_Servidor".
+-O banco é MySQL e deve ter o nome de "sistemapedidosbar".
+-Os projetos foram desenvolvidos na IDE eclipse. 
+-As portas dos clientes e funcionarios são geradas randomicamente.
+-Para um cliente ser conectado ele deve ter as informações de login corretas e uma conta aberta (o funcionário abre as contas).
+-Quando o programa é executado dados estão na tela(login) apenas para teste
