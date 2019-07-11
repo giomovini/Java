@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="152.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teste.aplicacao.ControllerTelaRenovacao">
+   <children>
+      <Label alignment="CENTER" layoutX="16.0" layoutY="131.0" prefHeight="20.0" prefWidth="392.0" text="Desenvolvido por Henry Saldanha" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Separator layoutY="129.0" prefHeight="5.0" prefWidth="444.0" />
+      <Button fx:id="Voltar" layoutX="24.0" layoutY="95.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="VOLTAR" />
+      <Button fx:id="Salvar" layoutX="296.0" layoutY="95.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="SALVAR" />
+      <Label layoutX="24.0" layoutY="24.0" prefHeight="21.0" prefWidth="274.0" text="Novo prazo para devolução:" textFill="#393939">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="DataDevolucao" layoutX="234.0" layoutY="22.0" />
+   </children>
+</AnchorPane>

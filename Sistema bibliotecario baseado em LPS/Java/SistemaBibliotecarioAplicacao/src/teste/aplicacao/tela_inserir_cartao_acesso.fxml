@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teste.aplicacao.ControllerTelaCadastroCartaoAcesso">
+   <children>
+      <Label alignment="CENTER" layoutY="486.0" prefHeight="20.0" prefWidth="635.0" text="Desenvolvido por Henry Saldanha" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Separator layoutY="485.0" prefHeight="3.0" prefWidth="635.0" />
+      <Button fx:id="Voltar" layoutX="31.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="VOLTAR" />
+      <Button fx:id="Salvar" layoutX="490.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="SALVAR" />
+      <TextField fx:id="txt_locatario" layoutX="75.0" layoutY="38.0" prefHeight="25.0" prefWidth="486.0" promptText="Locatário" />
+      <TableView fx:id="TabLocatario" layoutX="75.0" layoutY="75.0" prefHeight="197.0" prefWidth="486.0">
+        <columns>
+          <TableColumn fx:id="col_locatario" prefWidth="170.0" text="Locatário" />
+          <TableColumn fx:id="col_cpf" prefWidth="110.0" text="CPF" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_CodBarras" layoutX="199.0" layoutY="301.0" prefHeight="25.0" prefWidth="281.0" />
+      <DatePicker fx:id="Validade" layoutX="199.0" layoutY="341.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="87.0" layoutY="304.0" prefHeight="19.0" prefWidth="112.0" text="Código de Barras">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="344.0" prefHeight="19.0" prefWidth="112.0" text="Validade">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

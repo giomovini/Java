@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ancor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teste.ControllerTelaInicial">
+   <children>
+      <Separator layoutY="585.0" prefHeight="3.0" prefWidth="1200.0" />
+      <TabPane fx:id="Abas" layoutY="-1.0" prefHeight="579.0" prefWidth="1205.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Inicial">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="550.0" prefWidth="1013.0">
+                     <children>
+                        <ImageView fx:id="Inicial_imagem" fitHeight="550.0" fitWidth="1205.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="33.0" layoutY="28.0" prefHeight="67.0" prefWidth="128.0" text="UTBiblio" textFill="#6b6b6b">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="33.0" layoutY="110.0" prefHeight="91.0" prefWidth="393.0" text="“A Leitura abre as janelas do entendimento e desperta do sono a Sabedoria” (Rafael Mendes de Oliveira)" textFill="#6b6b6b" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Locatário">
+            <content>
+              <AnchorPane fx:id="ImprimirCarteirinha" minHeight="0.0" minWidth="0.0" prefHeight="648.0" prefWidth="995.0">
+                     <children>
+                        <TableView fx:id="TabLocatario" layoutX="22.0" layoutY="59.0" prefHeight="488.0" prefWidth="1161.0">
+                          <columns>
+                            <TableColumn fx:id="Locatario" prefWidth="235.0" text="Locatário" />
+                              <TableColumn fx:id="CPF" prefWidth="114.0" text="CPF" />
+                            <TableColumn fx:id="Sexo" prefWidth="126.0" text="Sexo" />
+                              <TableColumn fx:id="Idade" prefWidth="151.0" text="Idade" />
+                              <TableColumn fx:id="Email" prefWidth="203.0" text="Email" />
+                              <TableColumn fx:id="Telefone" prefWidth="198.0" text="Telefone" />
+                              <TableColumn fx:id="Endereco" prefWidth="133.0" text="Endereco" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="locatario_busca" layoutX="22.0" layoutY="14.0" prefHeight="29.0" prefWidth="326.0" promptText="Locatário">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="DeletarLocatario" layoutX="1087.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Deletar">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="EditarLocatario" layoutX="978.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Editar">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="InserirLocatario" layoutX="871.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Inserir">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ImprimirCart" layoutX="712.0" layoutY="14.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="143.0" text="Imprimir Carteirinha">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Exemplar">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="648.0" prefWidth="995.0">
+                     <children>
+                        <TableView fx:id="TabExemplar" layoutX="22.0" layoutY="59.0" prefHeight="488.0" prefWidth="1161.0">
+                           <columns>
+                              <TableColumn fx:id="Exemplar" prefWidth="180.0" text="Exemplar" />
+                              <TableColumn fx:id="Autor" prefWidth="133.0" text="Autor" />
+                              <TableColumn fx:id="Categoria" prefWidth="105.0" text="Categoria" />
+                              <TableColumn fx:id="Edicao" prefWidth="71.0" text="Edição" />
+                              <TableColumn fx:id="Idioma" prefWidth="83.0" text="Idioma" />
+                              <TableColumn fx:id="Lancamento" prefWidth="82.0" text="Lançamento" />
+                              <TableColumn fx:id="Classificacao" prefWidth="128.0" text="Classificação" />
+                              <TableColumn fx:id="CodBarras" prefWidth="118.0" text="Cod. Barras" />
+                              <TableColumn fx:id="Localizacao" prefWidth="150.0" text="Localizaçao" />
+                              <TableColumn fx:id="Disponivel" prefWidth="110.0" text="Disponivel" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="Exemplar_Busca" layoutX="22.0" layoutY="14.0" prefHeight="29.0" prefWidth="326.0" promptText="Exemplar">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="DeletarExemplar" layoutX="1087.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Deletar">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="Autor_Busca" layoutX="358.0" layoutY="14.0" prefHeight="29.0" prefWidth="326.0" promptText="Autor">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="EditarExemplar" layoutX="976.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Editar">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="InserirExemplar" layoutX="867.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Inserir">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Imprimir" layoutX="755.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Imprimir">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Locação">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="648.0" prefWidth="995.0">
+                     <children>
+                        <TableView fx:id="TabLocacao" layoutX="22.0" layoutY="59.0" prefHeight="488.0" prefWidth="1161.0">
+                           <columns>
+                              <TableColumn fx:id="Locatario_L" prefWidth="275.0" text="Locatário" />
+                              <TableColumn fx:id="Exemplar_L" prefWidth="253.0" text="Exemplar" />
+                              <TableColumn fx:id="Status" prefWidth="249.0" text="Status" />
+                              <TableColumn fx:id="DataEmprestimo" minWidth="5.0" prefWidth="121.0" text="Data Empréstimo" />
+                              <TableColumn fx:id="PrazoDevolucao" prefWidth="149.0" text="Prazo Devolução" />
+                              <TableColumn fx:id="DataDevolucao" prefWidth="113.0" text="Data Devolução" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="L_Locatario" layoutX="22.0" layoutY="14.0" prefHeight="29.0" prefWidth="255.0" promptText="Locatário">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="L_Exemplar" layoutX="289.0" layoutY="15.0" prefHeight="29.0" prefWidth="235.0" promptText="Exemplar">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </TextField>
+                        <CheckBox fx:id="Locados" layoutX="539.0" layoutY="20.0" mnemonicParsing="false" text="Locados">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="Devolvidos" layoutX="621.0" layoutY="20.0" mnemonicParsing="false" text="Devolvidos">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </CheckBox>
+                        <Button fx:id="DevolverLocacao" layoutX="1087.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Devolver">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="InserirLocacao" layoutX="975.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Inserir">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="RenovarLocacao" layoutX="860.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Renovar">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Reservas">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="648.0" prefWidth="995.0">
+                     <children>
+                        <TableView fx:id="TabReservas" layoutX="22.0" layoutY="59.0" prefHeight="488.0" prefWidth="1161.0">
+                           <columns>
+                              <TableColumn fx:id="Locatario_Reserva" prefWidth="432.0" text="Locatário" />
+                              <TableColumn fx:id="Exemplar_Reserva" prefWidth="452.0" text="Exemplar" />
+                              <TableColumn fx:id="Data_Reserva" minWidth="5.0" prefWidth="276.0" text="Data Reserva" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="InserirReserva" layoutX="967.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Inserir">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ExcluirReserva" layoutX="1087.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Excluir">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Cartão de Acesso">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="648.0" prefWidth="995.0">
+                     <children>
+                        <TableView fx:id="TabCartaoAcesso" layoutX="22.0" layoutY="59.0" prefHeight="488.0" prefWidth="1161.0">
+                           <columns>
+                              <TableColumn fx:id="Locatario_CA" prefWidth="432.0" text="Locatário" />
+                              <TableColumn fx:id="Cod_barras_CA" prefWidth="452.0" text="Código de Barras" />
+                              <TableColumn fx:id="validade_CA" minWidth="5.0" prefWidth="276.0" text="Validade" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="InserirCartaoAcesso" layoutX="967.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Inserir">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ExcluirCartaoAcesso" layoutX="1087.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Excluir">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label alignment="CENTER" layoutY="586.0" prefHeight="20.0" prefWidth="1200.0" text="Desenvolvido por Henry Saldanha" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

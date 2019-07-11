@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teste.locatario.ControllerTelaCadastroLocatario">
+   <children>
+      <Label alignment="CENTER" layoutY="486.0" prefHeight="20.0" prefWidth="635.0" text="Desenvolvido por Henry Saldanha" textFill="#9e9e9e">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Separator layoutY="485.0" prefHeight="3.0" prefWidth="635.0" />
+      <Label layoutX="33.0" layoutY="48.0" prefHeight="21.0" prefWidth="70.0" text="Nome:" textFill="#393939">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="Voltar" layoutX="31.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="VOLTAR" />
+      <Button fx:id="Salvar" layoutX="490.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="SALVAR" />
+      <TextField fx:id="Nome" layoutX="143.0" layoutY="46.0" prefHeight="25.0" prefWidth="343.0" />
+      <TextField fx:id="CPF" layoutX="144.0" layoutY="77.0" prefHeight="25.0" prefWidth="209.0" />
+      <Label layoutX="32.0" layoutY="214.0" prefHeight="21.0" prefWidth="104.0" text="Telefone:" textFill="#393939">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="79.0" prefHeight="21.0" prefWidth="70.0" text="CPF:" textFill="#393939">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="178.0" prefHeight="21.0" prefWidth="104.0" text="Nascimento:" textFill="#393939">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="110.0" prefHeight="21.0" prefWidth="70.0" text="Sexo:" textFill="#393939">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="142.0" prefHeight="21.0" prefWidth="70.0" text="E-mail:" textFill="#393939">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Email" layoutX="144.0" layoutY="140.0" prefHeight="25.0" prefWidth="209.0" />
+      <DatePicker fx:id="Nascimento" layoutX="144.0" layoutY="176.0" prefHeight="25.0" prefWidth="209.0" />
+      <RadioButton fx:id="Masculino" layoutX="144.0" layoutY="112.0" mnemonicParsing="false" text="Masculino" />
+      <RadioButton fx:id="Feminino" layoutX="228.0" layoutY="112.0" mnemonicParsing="false" text="Feminino" />
+      <TextField fx:id="Telefone" layoutX="144.0" layoutY="212.0" prefHeight="25.0" prefWidth="209.0" />
+      <Label layoutX="31.0" layoutY="288.0" prefHeight="21.0" prefWidth="70.0" text="Endereço:" textFill="#393939">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="323.0" prefHeight="21.0" prefWidth="70.0" text="Estado:" textFill="#393939">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Endereco" layoutX="145.0" layoutY="287.0" prefHeight="25.0" prefWidth="209.0" />
+      <TextField fx:id="Cidade" layoutX="144.0" layoutY="251.0" prefHeight="25.0" prefWidth="209.0" />
+      <Label layoutX="31.0" layoutY="252.0" prefHeight="21.0" prefWidth="70.0" text="Cidade:" textFill="#393939">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Estado" layoutX="145.0" layoutY="322.0" prefHeight="25.0" prefWidth="209.0" />
+   </children>
+</AnchorPane>
