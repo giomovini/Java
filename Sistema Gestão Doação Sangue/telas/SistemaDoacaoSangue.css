@@ -1,0 +1,29 @@
+.botao{
+    -fx-pref-width: 100;
+    -fx-font-weight: bold;
+}
+
+.botaoLigar{
+    -fx-text-fill: #ff0000;
+    -fx-pref-width: 210;
+    -fx-font-weight: bold;
+}
+
+.fonteRodape{
+    -fx-text-fill: #727272;
+    -fx-font-weight: bold;
+}
+
+.fonteTitulo{
+    -fx-text-fill: black;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+}
+
+.fonteSucesso{
+    -fx-text-fill: #009a05;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}
+
+
